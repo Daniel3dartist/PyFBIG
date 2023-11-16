@@ -1,4 +1,4 @@
-from pyFBIG import CPFGenerator, CPFProduct, IGenProduct
+from pyFBIG import CPFGenerator, CPFProduct
 
 class TestGenCPF:
     def test_factory(self):
@@ -6,7 +6,7 @@ class TestGenCPF:
         product = cpf_gen.generate_factory()
         assert type(product) == CPFProduct
 
-    def test_gen(self):
+    def test_gen(self):# pragma:no cover
         pass
 
 

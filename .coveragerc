@@ -1,0 +1,3 @@
+[run]
+source = pyFBIG/
+omit = __init__.py
