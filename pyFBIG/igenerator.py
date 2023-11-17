@@ -1,13 +1,16 @@
+from typing import Type
 from abc import ABC, abstractmethod
+from .igen_product import IGenProduct
 
 class IGenerator(ABC):
     """
     Generator Interface Class
     """
     @abstractmethod
-    def generate_factory(self):
+    def generator_factory(self):
         pass
 
-    def generate_product(self):
-        product = self.generate_factory()
-        return product
+    def generator(self):
+        product: Type[IGenProduct] = self.generator_factory()
+        result = product.gen()
+        return result

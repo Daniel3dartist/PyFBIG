@@ -3,3 +3,15 @@ Python - Fake Brazilian ID Generator is a package that generates fake data for y
 
 # About the project
 It is still in the prototyping and development phase. Feel free to contribute and suggest improvements.
+
+# How to use
+### Exemple:
+
+```
+from pyFBIG import FakeID
+
+fake = FakeID
+cpf = fake.cpf()
+print(cpf)
+# 163.710.406-50
+```
