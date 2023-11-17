@@ -9,3 +9,4 @@ class TestFakeID:
 
 if __name__ == "__main__":
     TestFakeID.test_cpf()
+    
