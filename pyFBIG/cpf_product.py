@@ -6,7 +6,7 @@ class CPFProduct(IGenProduct):
         self.return_list = False
 
 
-    def gen(self) -> str:
+    def gen(self):
         cpf: list = [str(self.rand_num()) for i in range(0, 11)]
         if self.return_list == True:
             return cpf

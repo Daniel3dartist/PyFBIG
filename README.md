@@ -8,9 +8,14 @@ Python - Fake Brazilian ID Generator is a package that generates fake data for y
 from pyFBIG import FakeID
 
 fake = FakeID()
+
 cpf = fake.cpf()
 print(cpf)
 # 163.710.406-50
+
+rg = fake.rg()
+print(rg)
+# MG86103044
 ```
 
 # About the project

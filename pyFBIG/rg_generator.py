@@ -4,4 +4,4 @@ from .rg_product import RGProduct
 
 class RGGenerator(IGenerator):
     def generator_factory(self) -> IGenProduct:
-        return RGProduct
+        return RGProduct()

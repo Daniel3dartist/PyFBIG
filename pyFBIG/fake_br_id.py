@@ -1,6 +1,7 @@
 from typing import Type
 from .igenerator import IGenerator
 from .cpf_generator import CPFGenerator
+from .rg_generator import RGGenerator
 
 class FakeID:
     """
@@ -8,7 +9,7 @@ class FakeID:
     """
     def cpf(self, especial_char: bool = True, return_list: bool = False):
         """
-        CPF(Cadastro de Pessoa Física) creation call function:
+        CPF (Cadastro de Pessoa Física) generation call function:
 
         Args:
             especial_char (bool): Defines whether the return will be a string with special characters or just a string containing the generated CPF numbers.
@@ -22,4 +23,14 @@ class FakeID:
         cpf_gen.especial_char = especial_char
         cpf_gen.return_list = return_list
         product_result = cpf_gen.generator()
+        return product_result
+    
+    def rg(self):
+        """
+        RG (Registro Geral) generation call function:
+        Returns:
+            Returns the generated RG numbers in string format. 
+        """
+        rg_gen: Type[IGenerator] = RGGenerator()
+        product_result = rg_gen.generator()
         return product_result
