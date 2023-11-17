@@ -10,7 +10,7 @@ It is still in the prototyping and development phase. Feel free to contribute an
 ```
 from pyFBIG import FakeID
 
-fake = FakeID
+fake = FakeID()
 cpf = fake.cpf()
 print(cpf)
 # 163.710.406-50

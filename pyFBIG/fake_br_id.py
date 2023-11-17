@@ -21,5 +21,5 @@ class FakeID:
         cpf_gen: Type[IGenerator] = CPFGenerator()
         cpf_gen.especial_char = especial_char
         cpf_gen.return_list = return_list
-        product = cpf_gen.generator()
-        return product
+        product_result = cpf_gen.generator()
+        return product_result
