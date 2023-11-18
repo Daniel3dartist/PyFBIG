@@ -19,6 +19,11 @@ print(cpf)
 rg = fake.rg()
 print(rg)
 # MG86103044
+
+crm = fake.crm()
+print(crm)
+
+# 
 ```
 
 # About the project

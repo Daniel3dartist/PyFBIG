@@ -6,6 +6,11 @@ class TestFakeID:
         result = fake.cpf(especial_char=True, return_list=False)
         assert len(result) == 14
 
+    def test_crm(self):
+        fake = FakeID()
+        result = fake.crm(especial_char=True, return_list=False)
+        assert len(result) == 13
+
     def test_rg(self):
         fake = FakeID()
         result = fake.rg()

@@ -6,7 +6,7 @@ README = (path / "README.md").read_text(encoding="utf-8")
 
 setup(name="pyFBIG",
     version="0.0.1",
-    description="Faker is a Python package that generates fake data for you.",
+    description="pyFBIG is a Python package that generates fake data for you.",
     long_description_content_type="text/markdown",
     long_description=README,
     classifiers=[
