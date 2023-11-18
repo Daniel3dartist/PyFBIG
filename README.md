@@ -1,13 +1,12 @@
-# PyFBIG
-Python - Fake Brazilian ID Generator is a package that generates fake data for you. Do you need to test something with Brazilian identification such as RG, CPF, Driver's License, CRM, COREN, etc.? PyFBIG is for you.
+# PyFBIG (Python - Fake Brazilian ID Generator)
+ PyFBIG is a package that generates fake data for you. Do you need to test something with Brazilian identification such as RG, CPF, Driver's License, CRM, COREN, etc.? PyFBIG is for you.
 
 # How to use
-### Exemple:
-
+### Install
 ```
-pip install pyFNIG
+pip install pyFBIG
 ```
-
+### Examples:
 ```
 from pyFBIG import FakeID
 
