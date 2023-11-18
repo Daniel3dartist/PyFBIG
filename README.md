@@ -5,6 +5,10 @@ Python - Fake Brazilian ID Generator is a package that generates fake data for y
 ### Exemple:
 
 ```
+pip install pyFNIG
+```
+
+```
 from pyFBIG import FakeID
 
 fake = FakeID()
