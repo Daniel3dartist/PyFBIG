@@ -6,6 +6,9 @@ class IGenerator(ABC):
     """
     Generator Interface Class
     """
+    def __init__(self):
+        self.is_complete = False
+
     @abstractmethod
     def generator_factory(self):
         pass

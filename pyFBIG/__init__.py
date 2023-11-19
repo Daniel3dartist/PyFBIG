@@ -8,3 +8,5 @@ from .rg_generator import RGGenerator
 from .rg_product import RGProduct
 from .crm_generator import CRMGenerator
 from .crm_product import CRMProduct
+
+from .BR_names.name import Name

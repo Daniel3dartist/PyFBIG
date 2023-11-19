@@ -2,8 +2,8 @@ from .igen_product import IGenProduct
 
 class CRMProduct(IGenProduct):
     def __init__(self):
-        self.especial_char = True
-        self.return_list = False
+        self.especial_char: bool = True
+        self.return_list: bool = False
 
     def gen(self):
         _br:str = 'BR'

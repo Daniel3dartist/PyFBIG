@@ -8,7 +8,7 @@ class FakeID:
     """
     Fake Brazilian ID generator
     """
-    def cpf(self, especial_char: bool = True, return_list: bool = False):
+    def cpf(self, especial_char: bool = True, return_list: bool = False, is_complete= False):
         """
         CPF (Cadastro de Pessoa Física) generation call function:
 
@@ -26,7 +26,7 @@ class FakeID:
         product_result = cpf_gen.generator()
         return product_result
     
-    def crm(self, especial_char: bool = True, return_list: bool = False):
+    def crm(self, especial_char: bool = True, return_list: bool = False, is_complete= False):
         """
         CRM (Conselho Regional de Medicina) generation call function:
 
@@ -44,12 +44,13 @@ class FakeID:
         product_result = crm_gen.generator()
         return product_result
 
-    def rg(self):
+    def rg(self, is_complete: bool= False):
         """
         RG (Registro Geral) generation call function:
         Returns:
             Returns the generated RG numbers in string format. 
         """
         rg_gen: Type[IGenerator] = RGGenerator()
+        rg_gen.is_complete = is_complete
         product_result = rg_gen.generator()
         return product_result

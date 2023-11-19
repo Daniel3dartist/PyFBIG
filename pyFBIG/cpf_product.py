@@ -2,9 +2,8 @@ from .igen_product import IGenProduct
 
 class CPFProduct(IGenProduct):
     def __init__(self):
-        self.especil_char = True
-        self.return_list = False
-
+        self.especil_char: bool = True
+        self.return_list: bool = False
 
     def gen(self):
         cpf: list = [str(self.rand_num()) for i in range(0, 11)]
