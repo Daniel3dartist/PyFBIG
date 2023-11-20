@@ -33,7 +33,7 @@ class RGProduct(IGenProduct):
                 'gender': _gender,
                 'birth': {
                     'day': self.rand_birthday(),
-                    'cite':'Pocos de Caldas',
+                    'city':'Pocos de Caldas',
                     'state':'MG'
                 },
                 'org': {
