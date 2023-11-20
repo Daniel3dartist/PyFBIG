@@ -27,7 +27,7 @@ print(rg)
 # 'gender': 'F',
 # 'birth': {
 #    'day': '21/10/1954',
-#    'cite':'Pocos de Caldas',
+#    'city':'Pocos de Caldas',
 #    'state':'MG'
 #     },
 #  'org': {
