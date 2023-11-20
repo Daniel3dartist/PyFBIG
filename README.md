@@ -18,7 +18,28 @@ print(cpf)
 
 rg = fake.rg()
 print(rg)
-# MG86103044
+# 86103044
+
+rg = fake.rg(is_complete=True)
+print(rg)
+#{
+# 'name':'Lucimara Santos Lemos',
+# 'gender': 'F',
+# 'birth': {
+#    'day': '21/10/1954',
+#    'cite':'Pocos de Caldas',
+#    'state':'MG'
+#     },
+#  'org': {
+#     'name': 'PC',
+#     'state': 'MG',
+#         },
+#  'affiliation': {
+#    'father': 'Ronaldo Castro Lemos', 
+#    'mother': 'Sophia Santos Lemos'
+#    },
+#  'rg': MG88103067
+# }
 
 crm = fake.crm()
 print(crm)

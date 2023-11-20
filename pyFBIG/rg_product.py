@@ -21,15 +21,18 @@ class RGProduct(IGenProduct):
         if self.is_complete == False:
             return rg
         else:
-            _name = name.gen_name(is_complete=True)
+            person = name.gen_name(is_complete=True)
+            _name= person['name']
+            _gender = person['gender']
             parents = self.parents_creator(_name= _name)
             if parents['father'].split(' ')[0] == _name.split(' ')[0]:
                 _list = _name.split(' ')
                 _name = _list[0] + ' Junior ' + ' '.join(_list[1:])
             rg_doc: dict = {
                 'name':_name,
+                'gender': _gender,
                 'birth': {
-                    'birthday': '10/12/1991',
+                    'day': self.rand_birthday(),
                     'cite':'Pocos de Caldas',
                     'state':'MG'
                 },

@@ -54,7 +54,7 @@ class TestName:
         result = _name.gen_name(is_complete=False)
         assert type(result) == str
         result = _name.gen_name(is_complete=True)
-        assert len(result.split(' ')) == 3 
+        assert len(result['name'].split(' ')) == 3 
 
     def test_gen_male_name(self):
         _name = Name()

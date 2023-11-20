@@ -16,6 +16,11 @@ class TestGenRG:
         product.is_complete = True
         result = product.gen()
         assert type(result) == dict
+        birthday = result['birth']['day']
+        assert type(birthday) == str
+        list_birthday = birthday.split('/')
+        assert len(list_birthday) == 3
+        assert len(list_birthday[0]) == 2 and len(list_birthday[1]) == 2 and len(list_birthday[2]) == 4
 
 if __name__ == "__main__":
     TestGenRG.test_factory()

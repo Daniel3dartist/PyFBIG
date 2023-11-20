@@ -47,8 +47,13 @@ class FakeID:
     def rg(self, is_complete: bool= False):
         """
         RG (Registro Geral) generation call function:
+        
+        Args:
+            is_complete: Defines whether it will return a simple string containing just an RG number or 
+            whether it will return a dictionary containing all information present in an RG
+
         Returns:
-            Returns the generated RG numbers in string format. 
+            Returns the generated RG fake data. It can return a string format (if is_complete is false) or a dictionary (if is_complete is True). 
         """
         rg_gen: Type[IGenerator] = RGGenerator()
         rg_gen.is_complete = is_complete

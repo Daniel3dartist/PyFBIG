@@ -29,7 +29,10 @@ class Name:
     def gen_name(self, is_complete: bool = False):
         rand_list: list = [self.gen_female_name(), self.gen_male_name()]
         _index = randrange(0, 2)
+        gender: str = "M"
         _name = rand_list[_index] 
+        if _index < 1:
+            gender = 'F'
         if is_complete == False:
             return _name
         else:
@@ -40,7 +43,7 @@ class Name:
                 rand_surname: str = self.gen_surname()
                 if surnames[0] != rand_surname:
                     surnames.append(rand_surname)
-            return _name + ' '+ surnames[0] + ' ' + surnames[1]
+            return {'name': _name + ' '+ surnames[0] + ' ' + surnames[1], 'gender': gender}
     
     def gen_female_name(self):
         female_name = self.female_name()
