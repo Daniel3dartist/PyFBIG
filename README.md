@@ -1,4 +1,5 @@
 # PyFBIG (Python - Fake Brazilian ID Generator)
+[![PyPI version](https://badge.fury.io/py/pyFBIG.svg)](https://badge.fury.io/py/pyFBIG) ![python tests](https://github.com/Daniel3dartist/PyFBIG/actions/workflows/ci.yml/badge.svg) [![codecov](https://codecov.io/gh/Daniel3dartist/PyFBIG/graph/badge.svg?token=E3NHE9ATHM)](https://codecov.io/gh/Daniel3dartist/PyFBIG) ![GitHub License](https://img.shields.io/github/license/Daniel3dartist/PyFBIG)
  PyFBIG is a package that generates fake data for you. Do you need to test something with Brazilian identification such as RG, CPF, Driver's License, CRM, COREN, etc.? PyFBIG is for you.
 
 # How to use
