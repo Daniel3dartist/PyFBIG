@@ -22,10 +22,10 @@ print(rg)
 
 rg = fake.rg(is_complete=True)
 print(rg)
-#{
-# 'name':'Lucimara Santos Lemos',
-# 'gender': 'F',
-# 'birth': {
+# {
+#  'name':'Lucimara Santos Lemos',
+#  'gender': 'F',
+#  'birth': {
 #    'day': '21/10/1954',
 #    'city':'Pocos de Caldas',
 #    'state':'MG'

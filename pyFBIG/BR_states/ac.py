@@ -1,0 +1,20 @@
+
+class AC:
+    def __init__(self):
+      self.cities = [
+        "Rio Branco",
+        "Cruzeiro do Sul",
+        "Sena Madureira",
+        "Tarauacá",
+        "Feijó",
+        "Senador Guiomard",
+        "Xapuri",
+        "Porto Acre",
+        "Mâncio Lima",
+        "Jordão",
+        "Capixaba",
+        "Manoel Urbano",
+        "Assis Brasil",
+        "Plácido de Castro",
+        "Rodrigues Alves"
+      ]

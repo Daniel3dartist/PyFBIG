@@ -1,0 +1,22 @@
+
+
+class AP:
+    def __init__(self):
+        self.cities = [
+      "Macapá",
+      "Santana",
+      "Laranjal do Jari",
+      "Oiapoque",
+      "Mazagão",
+      "Tartarugalzinho",
+      "Pedra Branca do Amapari",
+      "Porto Grande",
+      "Amapá",
+      "Cutias",
+      "Ferreira Gomes",
+      "Calçoene",
+      "Pracuúba",
+      "Serra do Navio",
+      "Itaubal",
+      "Vitória do Jari"
+    ]

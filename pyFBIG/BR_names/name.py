@@ -1,28 +1,30 @@
 import json
 import os
-import pathlib
+from pathlib import Path
 from random import randrange
+
+path = Path(__file__).parent.resolve()
+path = str(path).replace('\\', '/')
 
 class Name:
     def __init__(self):
-        self.path = pathlib.Path(__file__).parent.resolve()
-        self.path = str(self.path).replace('\\', '/')
+        self.path = path
 
     def json_load(self, name_list):
         return json.load(name_list)
 
     def female_name(self):
-        female_name = open(self.path + '/BR_female_names.json')
+        female_name = open(path + '/BR_female_names.json')
         _list = self.json_load(name_list=female_name) 
         return _list['names']
 
     def male_name(self):
-        male_name = open(self.path + '/BR_male_names.json')
+        male_name = open(path + '/BR_male_names.json')
         _list = self.json_load(name_list=male_name) 
         return _list['names']
     
     def surname(self):
-        male_name = open(self.path + '/BR_surnames.json')
+        male_name = open(path + '/BR_surnames.json')
         _list = self.json_load(name_list=male_name) 
         return _list['surnames']
     
