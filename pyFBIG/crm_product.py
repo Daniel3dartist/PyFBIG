@@ -1,9 +1,10 @@
 from .igen_product import IGenProduct
 
 class CRMProduct(IGenProduct):
-    def __init__(self):
+    def __init__(self, all_fields: bool = True):
         self.especial_char: bool = True
         self.return_list: bool = False
+        self.all_fields:bool = all_fields
 
     def gen(self):
         _br:str = 'BR'

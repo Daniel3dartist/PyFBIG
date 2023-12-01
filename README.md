@@ -14,15 +14,15 @@ from pyFBIG import FakeID
 
 fake = FakeID()
 
-cpf = fake.cpf()
+cpf = fake.cpf_number()
 print(cpf)
 # 163.710.406-50
 
-rg = fake.rg()
+rg = fake.rg_number()
 print(rg)
 # 86103044
 
-rg = fake.rg(is_complete=True)
+rg = fake.rg()
 print(rg)
 # {
 #  'name':'Lucimara Santos Lemos',
@@ -43,7 +43,7 @@ print(rg)
 #  'rg': MG88103067
 # }
 
-crm = fake.crm()
+crm = fake.crm_number()
 print(crm)
 # 40635352-0/BR
 ```

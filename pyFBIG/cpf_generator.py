@@ -7,6 +7,7 @@ class CPFGenerator(IGenerator):
     def __init__(self):
         self.especial_char: bool = True
         self.return_list: bool = False
+        self.all_fields: bool = True
 
     def generator_factory(self) -> IGenProduct:
         product: Type[IGenProduct] = CPFProduct()

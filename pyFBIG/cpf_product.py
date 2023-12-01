@@ -4,14 +4,16 @@ class CPFProduct(IGenProduct):
     def __init__(self):
         self.especil_char: bool = True
         self.return_list: bool = False
+        self.all_fields: bool = True
 
     def gen(self):
         cpf: list = [str(self.rand_num()) for i in range(0, 11)]
+        result = cpf
         if self.return_list == True:
-            return cpf
+            return result
         else:
             if self.especil_char == False:
-                return ''.join(cpf)
+                result = ''.join(cpf)
             else:
                 temp = []
                 _from = 0
@@ -24,4 +26,10 @@ class CPFProduct(IGenProduct):
                     temp.append(_str+h_dot)
                     _from = _end
                     _end += 3   
-                return ''.join(temp) + ''.join(cpf[-2:])
+                result =  ''.join(temp) + ''.join(cpf[-2:])
+        
+        if self.all_fields == False:
+            return result
+        else:
+            # TODO - Need add person info (first name, surname, parents, etc.)
+            return {'cpf': result}

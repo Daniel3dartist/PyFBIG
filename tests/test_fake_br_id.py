@@ -4,19 +4,21 @@ class TestFakeID:
     def test_cpf(self):
         fake = FakeID()
         result = fake.cpf(especial_char=True, return_list=False)
+        assert type(result) == dict
+    
+    def test_cpf_number(self):
+        fake = FakeID()
+        result = fake.cpf_number(especial_char=True, return_list=False)
         assert len(result) == 14
 
-    def test_crm(self):
+    def test_crm_number(self):
         fake = FakeID()
-        result = fake.crm(especial_char=True, return_list=False)
+        result = fake.crm_number(especial_char=True, return_list=False)
         assert len(result) == 13
 
     def test_rg(self):
         fake = FakeID()
-        result = fake.rg(is_complete=False)
-        assert type(result) == str
-        assert len(result) == 8 or len(result) == 10
-        result = fake.rg(is_complete=True)
+        result = fake.rg()
         assert type(result) == dict
         name = result['name'].split(' ')
         mother = result['affiliation']['mother'].split(' ')
@@ -31,6 +33,12 @@ class TestFakeID:
         else:
             assert len(name) == 3
             assert name[1] == mother[1] and name[-1] == father[-1]
+
+    def test_rg_number(self):
+        fake = FakeID()
+        result = fake.rg_number()
+        assert type(result) == str
+        assert len(result) == 8 or len(result) == 10
 
 
 if __name__ == "__main__":

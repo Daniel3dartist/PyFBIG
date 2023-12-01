@@ -2,8 +2,8 @@ from random import randrange
 from abc import ABC, abstractmethod
 
 class IGenProduct(ABC):
-    def __init__(self):
-        self.is_complete = False
+    def __init__(self, all_fields: bool = True):
+        self.all_fields: bool = all_fields
 
     def rand_num(self) -> int:
         return randrange(0, 9)

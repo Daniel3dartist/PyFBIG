@@ -15,6 +15,7 @@ class TestGenCPF:
         generator = CPFProduct()
         generator.especil_char = _especil_char
         generator.return_list = _return_list
+        generator.all_fields = False
         product = generator.gen()
         
         if _especil_char == True and _return_list == False:

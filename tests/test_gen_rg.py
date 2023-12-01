@@ -7,13 +7,12 @@ class TestGenRG:
         assert type(factory) == RGProduct
 
     def test_product(self):
-        product = RGProduct()
-        product.is_complete = False
+        product = RGProduct(all_fields=False)
         result = product.gen()
         assert type(result) == str
         if result[:3] == "MG":
             assert len(result[3:]) == 8
-        product.is_complete = True
+        product= RGProduct(all_fields=True)
         result = product.gen()
         assert type(result) == dict
         birthday = result['birth']['day']

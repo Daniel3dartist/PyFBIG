@@ -18,7 +18,7 @@ class RGProduct(IGenProduct):
         else:
             rg = 'MG'+"".join(rg)
 
-        if self.is_complete == False:
+        if self.all_fields == False:
             return rg
         else:
             person = name.gen_name(is_complete=True)
