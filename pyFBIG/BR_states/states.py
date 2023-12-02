@@ -21,6 +21,9 @@ class BRStates:
     
     def rand_city(self, state_acronym: str = 'MG'):
         _file = open(path+f"/{state_acronym}/cities.json", "r", encoding="UTF-8")
-        _cities: list = json.load(_file)['cities']
+        j = json.load(_file)
+        print('Json -> ', j)
+        _cities: list = j['cities']
+        print('Cities: ', _cities)
         return _cities[(randrange(0, len(_cities)))]
 
