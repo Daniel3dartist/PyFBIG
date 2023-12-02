@@ -1,0 +1,112 @@
+{
+  "states": {
+    "AC": {
+      "name": "Acre",
+      "acronym": "AC"
+    },
+    "AL": {
+      "name": "Alagoas",
+      "acronym": "AL"
+    },
+    "AP": {
+      "name": "Amapá",
+      "acronym": "AP"
+    },
+    "AM": {
+      "name": "Amazonas",
+      "acronym": "AM"
+    },
+    "BA": {
+      "name": "Bahia",
+      "acronym": "BA"
+    },
+    "CE": {
+      "name": "Ceará",
+      "acronym": "CE"
+    },
+    "DF": {
+      "name": "Distrito Federal",
+      "acronym": "DF"
+    },
+    "ES": {
+      "name": "Espírito Santo",
+      "acronym": "ES"
+    },
+    "GO": {
+      "name": "Goiás",
+      "acronym": "GO"
+    },
+    "MA": {
+      "name": "Maranhão",
+      "acronym": "MA"
+    },
+    "MT": {
+      "name": "Mato Grosso",
+      "acronym": "MT"
+    },
+    "MS": {
+      "name": "Mato Grosso do Sul",
+      "acronym": "MS"
+    },
+    "MG": {
+      "name": "Minas Gerais",
+      "acronym": "MG"
+    },
+    "PA": {
+      "name": "Pará",
+      "acronym": "PA"
+    },
+    "PB": {
+      "name": "Paraíba",
+      "acronym": "PB"
+    },
+    "PR": {
+      "name": "Paraná",
+      "acronym": "PR"
+    },
+    "PE": {
+      "name": "Pernambuco",
+      "acronym": "PE"
+    },
+    "PI": {
+      "name": "Piauí",
+      "acronym": "PI"
+    },
+    "RJ": {
+      "name": "Rio de Janeiro",
+      "acronym": "RJ"
+    },
+    "RN": {
+      "name": "Rio Grande do Norte",
+      "acronym": "RN"
+    },
+    "RS": {
+      "name": "Rio Grande do Sul",
+      "acronym": "RS"
+    },
+    "RO": {
+      "name": "Rondônia",
+      "acronym": "RO"
+    },
+    "RR": {
+      "name": "Roraima",
+      "acronym": "RR"
+    },
+    "SC": {
+      "name": "Santa Catarina",
+      "acronym": "SC"
+    },
+    "SP": {
+      "name": "São Paulo",
+      "acronym": "SP"
+    },
+    "SE": {
+      "name": "Sergipe",
+      "acronym": "SE"
+    },
+    "TO": {
+      "name": "Tocantins",
+      "acronym": "TO"
+    }
+  }
+}

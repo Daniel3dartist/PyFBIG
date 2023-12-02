@@ -26,8 +26,3 @@ class TestGenCRM:
                 assert len(result) == 13
             else:
                 assert len(result) == 11
-                
-
-if __name__ == "__main__":
-    TestGenCRM.test_factory()
-    TestGenCRM.test_product()

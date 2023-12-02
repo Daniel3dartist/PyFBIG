@@ -15,7 +15,7 @@ class TestName:
         result = _name.male_name()
         assert type(result) == list
 
-        with open(path+'/BR_male_names.json') as file:
+        with open(path+'/BR_male_names.json', 'r', encoding='UTF-8') as file:
             json_file = json.load(file)
         _names = json_file['names']
         assert _names == result
@@ -28,7 +28,7 @@ class TestName:
         result = _name.female_name()
         assert type(result) == list
 
-        with open(path+'/BR_female_names.json') as file:
+        with open(path+'/BR_female_names.json', 'r', encoding='UTF-8') as file:
             json_file = json.load(file)
         _names = json_file['names']
         assert _names == result
@@ -41,7 +41,7 @@ class TestName:
         result = _name.surname()
         assert type(result) == list
 
-        with open(path+'/BR_surnames.json') as file:
+        with open(path+'/BR_surnames.json', 'r', encoding='UTF-8') as file:
             json_file = json.load(file)
         _surnames = json_file['surnames']
         assert _surnames == result
