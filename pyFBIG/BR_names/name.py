@@ -14,18 +14,18 @@ class Name:
         return json.load(name_list)
 
     def female_name(self):
-        female_name = open(path + '/BR_female_names.json')
+        female_name = open(path + '/BR_female_names.json', 'r' , encoding='UTF-8')
         _list = self.json_load(name_list=female_name) 
         return _list['names']
 
     def male_name(self):
-        male_name = open(path + '/BR_male_names.json')
+        male_name = open(path + '/BR_male_names.json', 'r' , encoding='UTF-8')
         _list = self.json_load(name_list=male_name) 
         return _list['names']
     
     def surname(self):
-        male_name = open(path + '/BR_surnames.json')
-        _list = self.json_load(name_list=male_name) 
+        surname = open(path + '/BR_surnames.json', 'r' , encoding='UTF-8')
+        _list = self.json_load(name_list=surname) 
         return _list['surnames']
     
     def gen_name(self, is_complete: bool = False):
@@ -58,9 +58,3 @@ class Name:
     def gen_surname(self):
         surname = self.surname()
         return surname[randrange(0, len(surname))]
-
-
-if __name__ == "__main__":
-    Name().female_name()
-    Name().male_name()
-    Name().surname()

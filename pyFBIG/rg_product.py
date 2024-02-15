@@ -1,6 +1,7 @@
 from random import randrange
 from .igen_product import IGenProduct
 from .BR_names.name import Name
+from .BR_states import BRStates
 
 name = Name()
 
@@ -28,17 +29,19 @@ class RGProduct(IGenProduct):
             if parents['father'].split(' ')[0] == _name.split(' ')[0]:
                 _list = _name.split(' ')
                 _name = _list[0] + ' Junior ' + ' '.join(_list[1:])
+            _state = BRStates().rand_state()
             rg_doc: dict = {
                 'name':_name,
                 'gender': _gender,
                 'birth': {
                     'day': self.rand_birthday(),
-                    'city':'Pocos de Caldas',
-                    'state':'MG'
+                    'city':BRStates().rand_city(state_acronym=_state['acronym']),
+                    'state':_state['acronym']
                 },
                 'org': {
-                    'name': 'PC',
-                    'state': 'MG',
+                    'org_name': 'Secretaria de Segurança Pública',
+                    'org_acronym': 'SSP',
+                    'state': _state['acronym'],
                 },
                 'affiliation': parents,
                 'rg': rg
