@@ -33,7 +33,8 @@ print(rg)
 #    'state':'MG'
 #     },
 #  'org': {
-#     'name': 'PC',
+#     'org_name': 'Secretaria de Segurança Pública',
+#     'org_acronym': 'SSP',
 #     'state': 'MG',
 #         },
 #  'affiliation': {
