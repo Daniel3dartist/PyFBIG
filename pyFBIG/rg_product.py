@@ -39,7 +39,8 @@ class RGProduct(IGenProduct):
                     'state':_state['acronym']
                 },
                 'org': {
-                    'name': 'PC',
+                    'org_name': 'Secretaria de Segurança Pública',
+                    'org_acronym': 'SSP',
                     'state': _state['acronym'],
                 },
                 'affiliation': parents,
