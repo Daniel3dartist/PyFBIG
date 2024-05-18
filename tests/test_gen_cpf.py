@@ -29,8 +29,3 @@ class TestGenCPF:
             assert type(product) == list
         
         assert len(product) == _product_len
-
-
-if __name__ == "__main__":
-    TestGenCPF.test_factory()
-    TestGenCPF.test_product()

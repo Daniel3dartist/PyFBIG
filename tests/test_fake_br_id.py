@@ -11,11 +11,6 @@ class TestFakeID:
         result = fake.cpf_number(especial_char=True, return_list=False)
         assert len(result) == 14
 
-    def test_crm_number(self):
-        fake = FakeID()
-        result = fake.crm_number(especial_char=True, return_list=False)
-        assert len(result) == 13
-
     def test_rg(self):
         fake = FakeID()
         result = fake.rg()
@@ -40,8 +35,13 @@ class TestFakeID:
         assert type(result) == str
         assert len(result) == 8 or len(result) == 10
 
+    def test_crm_number(self):
+        fake = FakeID()
+        result = fake.crm_number(especial_char=True, return_list=False)
+        assert len(result) == 13
 
-if __name__ == "__main__":
-    TestFakeID.test_cpf()
-    TestFakeID.test_rg()
+    def test_crm(self):
+        fake = FakeID()
+        result = fake.crm()
+        assert result != None
     
