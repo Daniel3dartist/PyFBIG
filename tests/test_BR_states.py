@@ -1,7 +1,7 @@
-from pyFBIG.BR_states import BRStates 
+from pyFBIG.BR_states import BRStates as brs
 
-brs = BRStates()
+
 
 class TestBRStates:
     def test_rand_state(self):
-        assert type(brs.rand_state()) == dict
+        assert type(brs().rand_state()) == dict
